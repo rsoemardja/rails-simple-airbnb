@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  root 'flats#index'
+  resources :flats, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 end
