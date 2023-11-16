@@ -1,0 +1,16 @@
+<h1>Bookmarks</h1>
+
+<table>
+  <tr>
+    <th>Comment</th>
+    <th>Movie</th>
+    <th>List</th>
+  </tr>
+  <% @bookmarks.each do |bookmark| %>
+    <tr>
+      <td><%= bookmark.comment %></td>
+      <td><%= bookmark.movie.title %></td>
+      <td><%= bookmark.list.name %></td>
+    </tr>
+  <% end %>
+</table>
